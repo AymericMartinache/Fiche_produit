@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fiche Produit - Abricot</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="fiche-produit">
+            <!-- Section Infos Produit -->
+            <section class="infos-produit">
+                <div class="image-produit">
+                    <img src="./abricot.jpeg" alt="Image Abricot" />
+                </div>
+                <div class="details-produit">
+                    <h1>Abricot cat 1A France</h1>
+                    <p><strong>Code Produit :</strong> ABRIA</p>
+                    <p><strong>Fournisseur :</strong> GRANVIL FRUITS</p>
+                    <p>
+                        <strong>Lot :</strong> Fruits et légumes frais
+                        conventionnels
+                    </p>
+                    <p><strong>Origine :</strong> France</p>
+                    <p><strong>Marque :</strong> Non spécifiée</p>
+                    <p><strong>Calibre :</strong> Kg</p>
+                    <p class="stars"><strong>Note :</strong> ★★★★★</p>
+                    <button class="demander-fiche">
+                        Demander / Voir la fiche technique
+                    </button>
+                </div>
+                <div>
+                    <!-- Prix et stock -->
+                    <div class="prix-stock">
+                        <p class="prix">
+                            Prix pour 1 Kg :
+                            <span style="color: red; font-weight: bold"
+                                >3,800 €</span
+                            >
+                        </p>
+                        <p>TVA : 5,50%</p>
+                        <p>
+                            Stock :
+                            <span style="color: red; font-weight: bold"
+                                >0 Kg</span
+                            >
+                        </p>
+                        <p>Dernier Achat : N/A</p>
+                    </div>
+
+                    <!-- Prix UV-->
+                    <div class="uc-prix">
+                        <p>Prix pour 1 pièce : <span>25,237 €</span></p>
+
+                        <p>
+                            Prix pour un(e) unité x 1 pièce :
+                            <span>25,237 €</span>
+                        </p>
+
+                        <p>
+                            Prix pour un(e) de 1 unité x 1 pièce :
+                            <span>25,237 €</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Statistiques -->
+            <div class="statistiques">
+                <div class="nutrition">
+                    <h2>Informations Nutritionnelles</h2>
+                    <table>
+                        <tr>
+                            <th>Energie</th>
+                            <td>194 kJ / 45,9 Kcal</td>
+                        </tr>
+                        <tr>
+                            <th>Matières grasses</th>
+                            <td>0 g</td>
+                        </tr>
+                        <tr
+                            style="
+                                text-align: right;
+                                font-weight: 100;
+                                font-style: italic;
+                                color: gray;
+                                font-size: 0.8rem;
+                            "
+                        >
+                            <th>dont acides gras saturés</th>
+                            <td style="font-size: 0.8rem; color: gray">0 g</td>
+                        </tr>
+                        <tr>
+                            <th>Glucides</th>
+                            <td>9,01 g</td>
+                        </tr>
+                        <tr
+                            style="
+                                text-align: right;
+                                font-weight: 100;
+                                font-style: italic;
+                                color: gray;
+                                font-size: 0.8rem;
+                            "
+                        >
+                            <th>dont sucres</th>
+                            <td style="font-size: 0.8rem; color: gray">2 g</td>
+                        </tr>
+                        <tr>
+                            <th>Protéines</th>
+                            <td>0,81 g</td>
+                        </tr>
+                        <tr>
+                            <th>Sel</th>
+                            <td>< 0,013 g</td>
+                        </tr>
+                    </table>
+                    <p class="disclaimer">
+                        À consommer dans le cadre d'une alimentation variée et
+                        équilibrée, et d'un mode de vie sain.
+                    </p>
+                    <p class="source">
+                        Source : Anses - Table de composition nutritionnelle des
+                        aliments Ciqual 2020
+                    </p>
+                </div>
+
+                <!-- Section impact environnemental -->
+                <div class="impact">
+                    <h2>Changement climatique</h2>
+                    <p style="text-align: center; color: gray">
+                        1.80 kg CO2 eq/kg de produit
+                    </p>
+                    <h3>Impact par étapes du cycle de vie</h3>
+                    <div class="bar-container">
+                        <div class="bar" style="--percentage: 47.86%">
+                            <span class="bar-icon">🚜</span>
+                            <span class="bar-text">Agriculture</span>
+                            <span class="bar-fill" style="width: 47.86%">
+                                <span class="bar-percentage">47.86%</span>
+                            </span>
+                        </div>
+                        <div class="bar" style="--percentage: 17.09%">
+                            <span class="bar-icon">🏭</span>
+                            <span class="bar-text">Transformation</span>
+                            <span class="bar-fill" style="width: 17.09%">
+                                <span class="bar-percentage">17.09%</span>
+                            </span>
+                        </div>
+                        <div class="bar" style="--percentage: 15.6%">
+                            <span class="bar-icon">📦</span>
+                            <span class="bar-text">Emballage</span>
+                            <span class="bar-fill" style="width: 15.6%">
+                                <span class="bar-percentage">15.60%</span>
+                            </span>
+                        </div>
+                        <div class="bar" style="--percentage: 18.34%">
+                            <span class="bar-icon">🚚</span>
+                            <span class="bar-text">Transport</span>
+                            <span class="bar-fill" style="width: 18.34%">
+                                <span class="bar-percentage">18.34%</span>
+                            </span>
+                        </div>
+                        <div class="bar" style="--percentage: 1.12%">
+                            <span class="bar-icon">🏬</span>
+                            <span class="bar-text">Distribution</span>
+                            <span class="bar-fill" style="width: 1.12%">
+                                <span class="bar-percentage">1.12%</span>
+                            </span>
+                        </div>
+                        <div class="bar" style="--percentage: 0%">
+                            <span class="bar-icon">🍽️</span>
+                            <span class="bar-text">Consommation</span>
+                            <span class="bar-fill" style="width: 0%">
+                                <span class="bar-percentage">0.00%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

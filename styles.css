@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d1d1d1;
+    padding: 30px;
+}
+
+.fiche-produit {
+    width: 100%;
+    max-width: 1200px; /* Élargir la fiche produit */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Section du produit */
+.infos-produit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.image-produit img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-right: 20px;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.details-produit {
+    flex: 2;
+    margin-right: 20px;
+    line-height: 1.5rem;
+}
+
+.details-produit h1 {
+    font-size: 1.8rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.details-produit p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.stars {
+    color: rgb(255, 187, 0);
+}
+
+.stars strong {
+    color: #111;
+}
+
+.demander-fiche {
+    background-color: red;
+    padding: 0.7rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px grey;
+}
+
+/* Section prix */
+.prix-stock,
+.uc-prix {
+    flex: 1;
+    text-align: left;
+    border: 1px solid rgb(205, 205, 205);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.uc-prix {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    line-height: 1.8rem;
+}
+
+.uc-prix span {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Section statistiques */
+.statistiques {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nutrition,
+.impact {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition h2,
+.impact h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.impact h3 {
+    margin-top: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.disclaimer {
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+}
+
+.source {
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Section impact environnemental */
+.impact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar-container {
+    margin-top: 10px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin: 8px 0;
+    padding: 5px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.bar-text {
+    flex: 1;
+    font-weight: bold;
+    padding-left: 5px;
+    z-index: 1;
+    color: #333;
+}
+
+.bar-fill {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #e67e22;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    color: white;
+    /* font-weight: bold; */
+    transition: width 0.3s ease;
+}
+
+.bar-percentage {
+    position: relative;
+    z-index: 1;
+    color: #393939;
+}
+
+.bar span {
+    position: relative;
+}
